@@ -25,3 +25,13 @@
 
 //Console.WriteLine("true");
 //Console.WriteLine(true);
+
+
+
+string firstname = "Bob";
+int messages = 3;
+decimal temperature = 34.4m;
+
+Console.Write(
+    "Hello, " + firstname + "! You have " + messages + " messages in your inbox. The temperature is " + temperature + " celsius."
+);
