@@ -6,5 +6,22 @@
 //Console.Write(" ");
 //Console.Write("You wrote your first lines of code.");
 
-Console.WriteLine("This is the first line.");
-Console.WriteLine("This is the second line.");
+//Console.WriteLine("This is the first line.");
+//Console.WriteLine("This is the second line.");
+
+//Console.WriteLine('b');
+//Console.WriteLine(123);
+//F forteller compileren at det er en float
+//Console.WriteLine(0.25F);
+//Console.WriteLine(2.625);
+//m forteller compileren at det er en decimal
+//Console.WriteLine(12.39816m);
+
+//Console.WriteLine(true);
+//Console.WriteLine(false);
+
+//Console.WriteLine("123");
+//Console.WriteLine(123);
+
+//Console.WriteLine("true");
+//Console.WriteLine(true);
