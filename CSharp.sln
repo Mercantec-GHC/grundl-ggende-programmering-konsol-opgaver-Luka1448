@@ -51,6 +51,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dag 6.3 - Challenge project
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dag 6.1 - ConsoleApp - Debugging", "Dag 6.1 - ConsoleApp - Debugging\Dag 6.1 - ConsoleApp - Debugging.csproj", "{2BA19484-B5AF-4141-BEF4-15E76B56D26E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTest", "ConsoleAppTest\ConsoleAppTest.csproj", "{FAF14041-1900-4E26-B676-F0F984E789DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{2BA19484-B5AF-4141-BEF4-15E76B56D26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BA19484-B5AF-4141-BEF4-15E76B56D26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BA19484-B5AF-4141-BEF4-15E76B56D26E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF14041-1900-4E26-B676-F0F984E789DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF14041-1900-4E26-B676-F0F984E789DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF14041-1900-4E26-B676-F0F984E789DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF14041-1900-4E26-B676-F0F984E789DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,6 +158,7 @@ Global
 		{77D81C7A-5174-4178-9753-ABF04B0385C3} = {41C70665-98B5-46D1-942B-68BD9950E1B6}
 		{040BD663-83CF-4C78-8C66-634535B8DCB0} = {41C70665-98B5-46D1-942B-68BD9950E1B6}
 		{2BA19484-B5AF-4141-BEF4-15E76B56D26E} = {41C70665-98B5-46D1-942B-68BD9950E1B6}
+		{FAF14041-1900-4E26-B676-F0F984E789DC} = {6019F3B8-74E5-4CE3-A36F-B20DB22B8EB6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {192A3002-FCC6-4B15-A544-48E146B95756}
