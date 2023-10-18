@@ -43,10 +43,10 @@ switch (product[0])
         type = "Sweat shirt";
         break;
     case "02":
-        type = "Sweat shirt";
+        type = "T-Shirt";
         break;
     case "03":
-        type = "Sweat shirt";
+        type = "Sweat pants";
         break;
     default:
         type = "Other";
