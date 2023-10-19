@@ -128,7 +128,6 @@
 //    Console.WriteLine(current);
 //} while (current != 7);
 
-///*
 //while (current >= 3)
 //{
 //    Console.WriteLine(current);
@@ -138,29 +137,132 @@
 //*/
 
 
-Random roll = new Random();
+//Random roll = new Random();
 
-int hero = 10;
-int monster = 10;
+//int hero = 10;
+//int monster = 10;
 
-do
+//do
+//{
+//    int attack = roll.Next(1, 11);
+//    monster -= attack;
+//    Console.WriteLine($"Monster was damaged and lost {attack} health and now has {monster} health.");
+//    Console.WriteLine("\n\rPress the Enter key to continue");
+//    Console.ReadLine();
+
+//    if (hero <= 0) continue;
+
+//    attack = roll.Next(1, 11);
+//    hero -= attack;
+//    Console.WriteLine($"Hero was damaged and lost {attack} health and now has {hero} health.");
+//    Console.WriteLine("\n\rPress the Enter key to continue");
+//    Console.ReadLine();
+
+
+//}
+//while (hero > 0 && monster > 0);
+
+//Console.WriteLine(hero > monster ? "Hero wins!" : "Monster wins!");
+
+
+
+
+//using System.Runtime.InteropServices;
+/////*
+//string? readResult;
+//string valueEntered = "";
+//int numericValue = 0;
+//bool validNumber = false;
+
+//Console.WriteLine("Enter a number between 5 and 10:");
+
+//do
+//{
+//    readResult = Console.ReadLine();
+//    if (readResult != null)
+//    {
+//        valueEntered = readResult;
+//    }
+
+//    validNumber = int.TryParse(readResult, out numericValue);
+
+//    if (validNumber == true)
+//    {
+//        if (numericValue <=5 ||  numericValue >= 10)
+//        {
+//            validNumber = false;
+//            Console.WriteLine($"You entered {numericValue}. Please try again.");
+//        }
+//    }
+//    else
+//    {
+//        Console.WriteLine("Sorry, you entered an invalid number, please try again");
+//    }
+//} 
+//while (validNumber == false);
+
+//Console.WriteLine($"Your input value ({numericValue}) has been accepted");
+
+//readResult = Console.ReadLine();
+
+
+//string? readResult;
+//string roleName = "";
+//bool validRole = false;
+
+
+//do
+//{
+//    Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
+
+//    readResult = Console.ReadLine();
+//    if (readResult != null)
+//    {
+//        roleName = readResult.Trim();
+//    }
+
+//    if (roleName.ToLower() == "administrator" || roleName.ToLower() == "manager" || roleName.ToLower() == "user")
+//    {
+//        validRole = true;
+//    }
+//    else
+//    {
+//        Console.WriteLine($"The role name that you entered, {roleName} is not valid. Enter your role name (Administrator, Manager, or User)");
+//    }
+//}
+//while (validRole == false);
+
+//Console.WriteLine($"Your input value {roleName} has been accepted.");
+//readResult = Console.ReadLine();
+
+
+string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+int stringCount = myStrings.Length;
+
+string myString = "";
+int periodLocation = 0;
+
+
+for (int i = 0; i < stringCount; i++)
 {
-    int attack = roll.Next(1, 11);
-    monster -= attack;
-    Console.WriteLine($"Monster was damaged and lost {attack} health and now has {monster} health.");
-    Console.WriteLine("\n\rPress the Enter key to continue");
-    Console.ReadLine();
+    myString = myStrings[i];
+    periodLocation = myString.IndexOf('.');
 
-    if (hero <= 0) continue;
+    string mySentence;
 
-    attack = roll.Next(1, 11);
-    hero -= attack;
-    Console.WriteLine($"Hero was damaged and lost {attack} health and now has {hero} health.");
-    Console.WriteLine("\n\rPress the Enter key to continue");
-    Console.ReadLine();
+    while (periodLocation != -1)
+    {
+        mySentence = myString.Remove(periodLocation);
 
+        myString = myString.Substring(periodLocation + 1);
 
+        myString = myString.TrimStart();
+
+        periodLocation = myString.IndexOf(".");
+
+        Console.WriteLine(mySentence);
+    }
+
+    mySentence = myString.Trim();
+    Console.WriteLine(mySentence);
 }
-while (hero > 0 && monster > 0);
-
-Console.WriteLine(hero > monster ? "Hero wins!" : "Monster wins!");
