@@ -320,18 +320,9 @@ int[] studentScores = new int[10];
 
 string currentStudentLetterGrade = "";
 
-// display the header row for scores/grades
 Console.Clear();
 Console.WriteLine("Student\t\tExam Score\tOverall Grade\tExtra Credit\n");
 
-/*
-The outer foreach loop is used to:
-- iterate through student names 
-- assign a student's grades to the studentScores array
-- sum assignment scores (inner foreach loop)
-- calculate numeric and letter grade
-- write the score report information
-*/
 foreach (string name in studentNames)
 {
     string currentStudent = name;
